@@ -60,7 +60,7 @@
 			<td colspan="2">Acciones</td>
 		</tr>
 		<%
-			List<TblProductocl3> listadoProducto = crud.ListadoProducto();
+			List<TblProductocl3> listadoProducto = (List<TblProductocl3>)request.getAttribute("listadoproductos");
 			if(listadoProducto != null){
 				for(TblProductocl3 li : listadoProducto){
 				%>
@@ -71,8 +71,8 @@
 						<td><%=li.getPreciocompcl3()%></td>
 						<td><%=li.getEstadocl3()%></td>
 						<td><%=li.getDescripcl3()%></td>
-						<td>Borrar</td>
-						<td>Actua</td>
+						<td><a href="ControladorProducto?accion=Eliminar&cod=<%=li.getIdproductoscl3()%>">Borrar</a></td>
+						<td><a href="ControladorProducto?accion=Modificar&cod=<%=li.getIdproductoscl3()%>">Actua</a></td>
 					</tr>
 				<% 	
 				}

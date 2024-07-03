@@ -8,6 +8,6 @@
 </head>
 <body bgcolor="#c5dec9">
 <h2 align="center">MENU-PRINCIPAL</h2>
-<div align="center" ><a href="FormRegistrarProducto.jsp" >Registrar Producto</a></div>
+<div align="center" ><a href="ControladorProducto?accion=Listar" >Registrar Producto</a></div>
 </body>
 </html>
