@@ -12,7 +12,7 @@ public class ClassUsuarioImp implements IUsuario{
 
 	@Override
 	public TblUsuariocl3 autenticarUsuario(String nombreUsuario, String contrasena) {
-		EntityManagerFactory fabr = Persistence.createEntityManagerFactory("LPII_CL2_LunaTarapaDiego");
+		EntityManagerFactory fabr = Persistence.createEntityManagerFactory("LPII_CL3_LunaTarapaDiego");
 
 		EntityManager em = fabr.createEntityManager();
 		
@@ -40,7 +40,7 @@ public class ClassUsuarioImp implements IUsuario{
 
 	@Override
 	public void RegistrarUsuario(TblUsuariocl3 usuario) {
-		EntityManagerFactory fabr = Persistence.createEntityManagerFactory("LPII_CL2_LunaTarapaDiego");
+		EntityManagerFactory fabr = Persistence.createEntityManagerFactory("LPII_CL3_LunaTarapaDiego");
 		//Permite gestionar entidades
 		EntityManager em = fabr.createEntityManager();
 		//Iniciar Tran
